@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <a v-for="작명 in 3" :key="작명">Home</a>
+    <a v-for="(작명, 확인) in menus" :key="확인"> {{확인}} </a>
   </div>
   <img alt="Vue logo" src="./assets/logo.png">
   <div :style="color1">
@@ -34,7 +34,8 @@ export default {
       // 자료 이름: 자료 내용
       color1: 'color: green',
       color2: 'color: purple',
-      products:['강남', '판교', '마곡']
+      products:['강남', '판교', '마곡'],
+      menus: ['HOME', 'SHOP', 'ABOUT']
     }
   },
   components: {
@@ -54,6 +55,7 @@ export default {
 }
 .menu {
   background-color: darkslateblue;
+  margin: 50px;
   padding: 15px;
   border-radius: 5px;
 }
