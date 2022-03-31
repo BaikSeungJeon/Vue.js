@@ -22,6 +22,7 @@
   <div :style="color2">
     <h1>{{products[2]}} 원룸</h1>
     <p>2억</p>
+    
   </div>
 </template>
 
