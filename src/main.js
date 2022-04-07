@@ -1,4 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'; // 라우터
 
-createApp(App).mount('#app')
+
+createApp(App).use(router).mount('#app');
